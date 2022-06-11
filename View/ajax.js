@@ -4,7 +4,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/browse.php",
+      url: "../Controller/browse.php",
       data: $(this).serialize(),
       datatype: "html",
       success: result => {
@@ -18,7 +18,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/delete.php",
+      url: "../Controller/delete.php",
       data: $(this).serialize(),
       datatype: "html",
       success: result => {
@@ -32,7 +32,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/add.php",
+      url: "../Controller/add.php",
       data: $(this).serialize(),
       datatype: "html",
       success: result => {
@@ -46,7 +46,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/edit.php",
+      url: "../Controller/edit.php",
       data: $(this).serialize(),
       datatype: "html",
       success: result => {
@@ -60,7 +60,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/nested.php",
+      url: "../Controller/nested.php",
       cache: false,
       data: $(this).val(),
       // data: $(this).serialize(),
@@ -81,7 +81,7 @@ $(document).ready(function () {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "Controller/aggfunc.php",
+      url: "../Controller/aggfunc.php",
       cache: false,
       data: $(this).val(),
       // data: $(this).serialize(),

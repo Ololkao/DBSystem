@@ -1,5 +1,5 @@
 <?php
-require_once('Controller/conn.php');
+require_once('../Controller/conn.php');
 //
 // $conn->close();
 ?>
@@ -44,7 +44,7 @@ require_once('Controller/conn.php');
   </div>
   <div class="tab_content"></div><br>
   <div class="text_content">
-    <form method="POST" id="form" action="Controller/syntax.php">
+    <form method="POST" id="form" action="../Controller/syntax.php">
       <label for="sql">執行SQL語法</label><br>
       <textarea id="sql" name="sql" rows="6" cols="50"></textarea>
       <input type="submit" value="送出">
